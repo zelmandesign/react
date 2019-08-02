@@ -1,9 +1,12 @@
 import React from "react";
+import "../css/Footer.css";
 
 function Footer() {
 	return (
 		<footer>
-			<h1>My Fucken Footer Son!</h1>
+			<div className="container">
+				<h1>My Fucken Footer Son!</h1>
+			</div>
 		</footer>
 	);
 }
