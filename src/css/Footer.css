@@ -1,4 +1,4 @@
 footer {
-	background: #000;
+	background: var(--gray-dark);
 	padding: 50px 0;
 }

@@ -1,10 +1,10 @@
 import React from "react";
 
-function MyInfo() {
+function Main() {
 	return (
-		<div className="MyInfo">
+		<div className="Main">
 			<div className="container">
-				<h1 className="pb-5">Big z</h1>
+				<h1 className="mb-5">Big z</h1>
 				<span className="text-warning">lorem ipsum</span>
 				<ul style={{ listStyle: "none", padding: "0", margin: "0" }}>
 					<li>1</li>
@@ -14,4 +14,4 @@ function MyInfo() {
 	);
 }
 
-export default MyInfo;
+export default Main;

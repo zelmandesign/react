@@ -6,7 +6,7 @@ function Header() {
 	return (
 		<header>
 			Header
-			<img src={logo} alt="logo" width="75" height="75" />
+			<img className="App-logo" src={logo} alt="logo" width="75" height="75" />
 		</header>
 	);
 }

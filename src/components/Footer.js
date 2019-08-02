@@ -3,10 +3,8 @@ import "../css/Footer.css";
 
 function Footer() {
 	return (
-		<footer>
-			<div className="container">
-				<h1>My Fucken Footer Son!</h1>
-			</div>
+		<footer className="mt-auto">
+			<div className="container">Footer</div>
 		</footer>
 	);
 }
