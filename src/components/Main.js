@@ -1,16 +1,15 @@
 import React from "react";
+import Clock from "../components/Clock";
 
 function Main() {
 	return (
-		<div className="Main">
+		<main>
 			<div className="container">
-				<h1 className="mb-5">Big z</h1>
-				<span className="text-warning">lorem ipsum</span>
-				<ul style={{ listStyle: "none", padding: "0", margin: "0" }}>
-					<li>1</li>
-				</ul>
+				<div className="text-right">
+					<Clock />
+				</div>
 			</div>
-		</div>
+		</main>
 	);
 }
 
