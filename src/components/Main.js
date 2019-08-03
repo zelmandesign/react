@@ -3,8 +3,15 @@ import Clock from "../components/Clock";
 // import Todo from "../components/Todo";
 import ContactCard from "../components/ContactCard";
 import Joke from "./Joke";
+import JokesData from "../components/JokesData";
 
 function Main() {
+	const JokeComponents = JokesData.map(joke => {
+		return (
+			<Joke key={joke.id} question={joke.question} punchline={joke.punchline} />
+		);
+	});
+
 	return (
 		<main>
 			<div className="container">
@@ -12,20 +19,7 @@ function Main() {
 					<Clock />
 				</div>
 
-				<Joke
-					joke={{
-						question: "Are you gay?",
-						punchline: "fuckouutahere"
-					}}
-				/>
-
-				<Joke
-					joke={{
-						punchline: "west side"
-					}}
-				/>
-
-				<Joke joke={{}} />
+				{JokeComponents}
 
 				<ContactCard
 					contact={{
