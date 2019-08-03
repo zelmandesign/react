@@ -2,6 +2,7 @@ import React from "react";
 import Clock from "../components/Clock";
 // import Todo from "../components/Todo";
 import ContactCard from "../components/ContactCard";
+import Joke from "./Joke";
 
 function Main() {
 	return (
@@ -10,6 +11,22 @@ function Main() {
 				<div className="text-right">
 					<Clock />
 				</div>
+
+				<Joke
+					joke={{
+						question: "Are you gay?",
+						punchline: "fuckouutahere"
+					}}
+				/>
+
+				<Joke
+					joke={{
+						punchline: "west side"
+					}}
+				/>
+
+				<Joke joke={{}} />
+
 				<ContactCard
 					contact={{
 						imgUrl: "https://picsum.photos/300/200",
